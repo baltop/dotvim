@@ -137,40 +137,11 @@ call pathogen#helptags()
 set laststatus=2
 
 
-" Settings for ctrlp
-" cd ~/.vim/bundle
-" git submodule add https://github.com/kien/ctrlp.vim.git bundle/ctrlp
-let g:ctrlp_max_height = 30
-set wildignore+=*.pyc
-set wildignore+=*_build/*
-set wildignore+=*/coverage/*
-
-
-" Settings for python-mode
-" cd ~/.vim
-" git submodule add https://github.com/klen/python-mode bundle/pythonmode 
-let g:pymode_syntax = 1
-let g:pymode_syntax_builtin_objs = 0
-let g:pymode_syntax_builtin_funcs = 0
-let g:pymode_python = 'python3'
-
 
 " Setting NERDTree
 " git submodule add https://github.com/scrooloose/nerdtree.git bundle/nerdtree
-map <C-b> :NERDTreeToggle<CR>
+map <C-w> :NERDTreeToggle<CR>
 set encoding=utf-8
-
-
-" Python folding
-" mkdir -p ~/.vim/ftplugin
-" wget -O ~/.vim/ftplugin/python_editing.vim
-" http://www.vim.org/scripts/download_script.php?src_id=5492
-set nofoldenable
-
-
-" vim-latex-live-preview settings
-autocmd Filetype tex setl updatetime=1
-let g:livepreview_previewer = 'open -a Preview'
 
 
 " save sudo file
