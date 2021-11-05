@@ -7,7 +7,7 @@ autocmd! bufwritepost .vimrc source %
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
 set pastetoggle=<F2>
 set clipboard=unnamed
-set autowrite
+
 
 " Mouse and backspace
 "set mouse=a  " on OSX press ALT and click
@@ -73,8 +73,7 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-" color wombat256mod
-color desert
+color wombat256mod
 
 
 " Enable syntax highlighting
